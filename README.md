@@ -6,7 +6,7 @@
 **See details below:**
 <details>
   
-| Function |
+| Functions |
 |-|
 |Curl|
 |Ping|

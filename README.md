@@ -1,5 +1,6 @@
 # sIbO-Enhanced
-
+## sIbO-Enhanced is an remastered version of sIbO, sIbO:Rewrited and sIbO-Remastered.
+## sIbO-Enhanced is now free!
 ## sIbO is a powerful program writed in Batch for things like:
 
 

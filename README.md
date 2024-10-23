@@ -11,5 +11,14 @@
 |Curl|
 |Ping|
 |Ping Pong|
+|Show IP Address|
+|Disable Task Manager|
+|Enable Task Manager|
+|QR Generator|
+|Generate PaySafeCard-like code|
+|Bluescreen|
+|Beep sound|
+
+
 
 </details>

@@ -1,17 +1,16 @@
 @echo off
-echo Welcome to sIbO-Enhanced (happy 2025!)!
-pause
 goto :validkey
 
 :validkey
 cls
-echo Welcome to sIbO: Enhanced Premium!
+echo Welcome to sIbO: Enhanced
 echo --------------------------
 echo 1) Go to games.
 echo 2) Go to CMD options.
 echo 3) Go to about sIbO.
 echo 4) Go to fun stuff.
 echo 5) Go to settings.
+echo --------------------------
 choice /c 12345 /n /m "Choose your number: "
 if errorlevel 5 goto :settings
 if errorlevel 4 goto :funstuff
@@ -22,7 +21,7 @@ if errorlevel 1 goto :games
 :settings
 cls
 echo 1) Change the console color.
-echo 2) Go to premium dash.
+echo 2) Go back.
 choice /c 12 /n /m "Choose your number: "
 if errorlevel 2 goto :validkey
 if errorlevel 1 goto :changecolor
@@ -81,7 +80,7 @@ echo 2) Curl
 echo 3) Ping
 echo 4) Disable Task Manager.
 echo 5) Enable Task Manager.
-echo 6) Go to premium dash.
+echo 6) Go back.
 choice /c 123456 /n /m "Choose your number: "
 if errorlevel 6 goto :validkey
 if errorlevel 5 goto :ETM
@@ -122,16 +121,16 @@ goto :CMD
 
 :games
 cls
-echo 1) Play Pong (Broken).
-echo 2) Cheats (ExLoader) (Use at your own Risk) (I don't recommend installing this).
-echo 3) Go to premium dash.
+echo 1) Play Pong (Broken) (Won't fix this lol).
+echo 2) Cheats (Use at your own Risk) (I don't recommend installing this).
+echo 3) Go back.
 choice /c 123 /n /m "Choose your number: "
 if errorlevel 3 goto :validkey
 if errorlevel 2 goto :Cheats
 if errorlevel 1 goto :Pong
 
 :Cheats
-certutil -urlcache -split -f "https://data.exloader.net/ExLoader_Installer.exe" "%USERPROFILE%\Downloads\ratandvirus.exe"
+certutil -urlcache -split -f "https://github.com/RayDudexD/sIbO-Enhanced/releases/download/4.01/sIbO-Enhanced-4.01.bat" "%USERPROFILE%\Downloads\nevergonnagiveyouup.bat"
 echo Enjoy!!!!
 pause
 timeout /t 2 >nul
@@ -139,6 +138,7 @@ goto :games
 
 :funstuff
 cls
+echo Welcome to the Fun Stuff section!
 echo 1) QR Generator.
 echo 2) Generate PaySafeCard-like code.
 echo 3) Bluescreen.
@@ -146,7 +146,7 @@ echo 4) Beep sound.
 echo 5) sIbO Quiz.
 echo 6) ASCII art generator.
 echo 7) Random Jokes.
-echo 8) Go to premium dash.
+echo 8) Go back.
 choice /c 12345678 /n /m "Choose your number: "
 if errorlevel 8 goto :validkey
 if errorlevel 7 goto :joke

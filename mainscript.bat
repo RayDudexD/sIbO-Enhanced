@@ -1,16 +1,33 @@
 @echo off
+echo     SSSSSSSSSSSSSSS   IIIIIIIIIII   BBBBBBBBBBBBBBBBB   OOOOOOOOO     
+echo   SS:::::::::::::::S  I::::::::I   B::::::::::::::::B OO:::::::::OO   
+echo  S:::::SSSSSS::::::S  I::::::::I   B::::::BBBBBB:::::BO:::::::OOO::::O  
+echo  S:::::S     SSSSSSS  II::::::II   BB:::::B     B:::::BO::::::O   O::::O 
+echo  S:::::S                I::::I       B::::B     B:::::BO:::::O     O::::O
+echo  S:::::S                I::::I       B::::B     B:::::BO:::::O     O::::O
+echo   S::::SSSS             I::::I       B::::BBBBBB:::::B O:::::O     O::::O
+echo    SS::::::SSSSS        I::::I       B:::::::::::::BB  O:::::O     O::::O
+echo      SSS::::::::SS      I::::I       B::::BBBBBB:::::B O:::::O     O::::O
+echo         SSSSSS::::S     I::::I       B::::B     B:::::BO:::::O     O::::O
+echo              S:::::S    I::::I       B::::B     B:::::BO:::::O     O::::O
+echo              S:::::S    I::::I       B::::B     B:::::BO::::::O   O:::::O
+echo  SSSSSSS     S:::::S  II::::::II   BB:::::BBBBBB::::::BO:::::::OOO:::::::O
+echo  S::::::SSSSSS:::::S  I::::::::I   B:::::::::::::::::B OO:::::::::::::OO 
+echo  S:::::::::::::::SS   I::::::::I   B::::::::::::::::B    OO:::::::::OO   
+echo   SSSSSSSSSSSSSSS     IIIIIIIIIII   BBBBBBBBBBBBBBBBB       OOOOOOOOO     
+pause
 goto :validkey
 
 :validkey
 cls
-echo Welcome to sIbO: Enhanced
+echo Welcome to sIbO-Enhanced
 echo --------------------------
 echo 1) Go to games.
 echo 2) Go to CMD options.
 echo 3) Go to about sIbO.
 echo 4) Go to fun stuff.
 echo 5) Go to settings.
-echo 6) hmmmmmmmmmmm?
+echo 6) Easter eggs.
 echo --------------------------
 choice /c 123456 /n /m "Choose your number: "
 if errorlevel 6 goto :secret

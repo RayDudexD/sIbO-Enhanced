@@ -24,17 +24,23 @@ if errorlevel 1 goto :games
 set /p "pass=Enter a password...: "
 set "correctPassword=kencarson2025realinhindi"
 set "turskueasteregg=goodbro2025"
+set "cttpass=besttoolwin11"
 
 if "%pass%"=="%correctPassword%" (
-    echo access granted.
+    echo Access granted.
     goto :easteregg
 ) else (
     if "%pass%"=="%turskueasteregg%" (
-        echo another easter egg?
+        echo Another easter egg?
         goto :tursku
     ) else (
-        echo incorrect password.
-        goto :validkey
+        if "%pass%"=="%cttpass%" (
+            echo Another one?
+            goto :ctteg
+        ) else (
+            echo Incorrect password.
+            goto :validkey
+        )
     )
 )
 
@@ -373,4 +379,26 @@ goto :watchtursku
 
 :watchtursku
 start "" https://www.youtube.com/watch?v=C4VMVBHiz58
+goto :validkey
+
+
+:ctteg
+echo    CCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+echo CCC::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T
+echo CC:::::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T
+echo C:::::CCCCCCCC::::CT:::::TT:::::::TT:::::TT:::::TT:::::::TT:::::T
+echo C:::::C       CCCCCCTTTTTT  T:::::T  TTTTTTTTTTTT  T:::::T  TTTTTT
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C                     T:::::T                T:::::T
+echo C:::::C       CCCCCC        T:::::T                T:::::T
+echo C:::::CCCCCCCC::::C      TT:::::::TT            TT:::::::TT
+echo CC:::::::::::::::C       T:::::::::T            T:::::::::T
+echo CCC::::::::::::C         T:::::::::T            T:::::::::T
+echo  CCCCCCCCCCCCC          TTTTTTTTTTT            TTTTTTTTTTT
+echo Use the amazing CTT tool!
+pause
 goto :validkey

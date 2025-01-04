@@ -1,5 +1,5 @@
-# sIbO-Enhanced is an remastered version of sIbO, sIbO:Rewrited and sIbO-Remastered
-## sIbO is a powerful program writed in Batch for things like:
+# sIbO-Enhanced is an remastered version of sIbO, sIbO:Rewrited and sIbO-Remastered!
+## sIbO is a multi-tool written in Batch for things like:
 
 
 **See details below:**
@@ -9,7 +9,7 @@
 |-|
 |Curl|
 |Ping|
-|Ping Pong|
+|Ping Pong (broken)|
 |Show IP Address|
 |Disable Task Manager|
 |Enable Task Manager|

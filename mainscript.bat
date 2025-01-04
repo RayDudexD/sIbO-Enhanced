@@ -10,13 +10,35 @@ echo 2) Go to CMD options.
 echo 3) Go to about sIbO.
 echo 4) Go to fun stuff.
 echo 5) Go to settings.
+echo 6) hmmmmmmmmmmm?
 echo --------------------------
-choice /c 12345 /n /m "Choose your number: "
+choice /c 123456 /n /m "Choose your number: "
+if errorlevel 6 goto :secret
 if errorlevel 5 goto :settings
 if errorlevel 4 goto :funstuff
 if errorlevel 3 goto :asIbOR
 if errorlevel 2 goto :CMD
 if errorlevel 1 goto :games
+
+:secret
+set /p "pass=Enter a password...: "
+set "correctPassword=kencarson2025realinhindi"
+set "turskueasteregg=goodbro2025"
+
+if "%pass%"=="%correctPassword%" (
+    echo access granted.
+    goto :easteregg
+) else (
+    if "%pass%"=="%turskueasteregg%" (
+        echo another easter egg?
+        goto :tursku
+    ) else (
+        echo incorrect password.
+        goto :validkey
+    )
+)
+
+
 
 :settings
 cls
@@ -337,3 +359,18 @@ if /i "!input!"=="down" if !paddleBY! lss !height!-paddleHeight (
 )
 goto :eof
 
+
+:easteregg
+cls
+start "" https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUmbmV2ZXIgZ29uYW4gZ2l2ZSB5b3UgdXAgZGlmZmVyZW50IGxpbms%3D
+goto :validkey
+
+:tursku
+cls
+echo thank you tursku for being an amazing friend!!!!!!
+pause
+goto :watchtursku
+
+:watchtursku
+start "" https://www.youtube.com/watch?v=C4VMVBHiz58
+goto :validkey
